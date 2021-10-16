@@ -30,7 +30,7 @@ main.cards section.card {
     background: white;
     padding: 1rem 1.5rem;
     border-radius: 8px;
-    max-height: 256px;
+    max-height: 468px;
     margin-left: 32px;
 }
 
@@ -100,3 +100,21 @@ main.cards section.card.about {
     box-shadow: 20px 20px 50px -30px #FFC1D5;
 }
 
+@media screen and (max-width: 720px){
+    main.cards{
+        flex-direction: column;
+    }
+
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    main.cards section.card buttom{
+        font-size: 70%;
+    }
+}
