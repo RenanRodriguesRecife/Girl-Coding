@@ -20,6 +20,10 @@ main.cards{
     display: flex;
     flex-direction: row;
     padding: 32px;
+
+    /* Adição de animação via Animation.style*/
+    animation: bounceInDown;
+    animation-duration: 2s;
 }
 
 main.cards section.card {
